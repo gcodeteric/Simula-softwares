@@ -1,0 +1,26 @@
+{
+  "f1_2026": {
+    "name": "🏎️ F1 2026 (25-18-15...)",
+    "description": "Sistema clássico F1 com bonus de pole e fastest lap",
+    "points_per_position": [25, 18, 15, 12, 10, 8, 6, 4, 2, 1],
+    "pole_bonus": 1,
+    "fastest_lap_bonus": 1,
+    "finish_bonus": 0
+  },
+  "flat_30": {
+    "name": "📊 Linear (30-27-25...)",
+    "description": "Todos os pilotos pontuam, diferenças mais pequenas",
+    "points_per_position": [30, 27, 25, 23, 21, 19, 17, 15, 13, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1],
+    "pole_bonus": 0,
+    "fastest_lap_bonus": 0,
+    "finish_bonus": 1
+  },
+  "endurance": {
+    "name": "🏁 Endurance (50-40-32...)",
+    "description": "Pontos altos com bónus generosos",
+    "points_per_position": [50, 40, 32, 26, 22, 19, 16, 14, 12, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1],
+    "pole_bonus": 2,
+    "fastest_lap_bonus": 2,
+    "finish_bonus": 2
+  }
+}

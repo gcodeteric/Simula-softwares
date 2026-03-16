@@ -1,0 +1,40 @@
+{
+  "sessionType": "R",
+  "trackName": "spa",
+  "sessionResult": {
+    "leaderBoardLines": [
+      {
+        "car": {
+          "carModel": 30
+        },
+        "currentDriver": {
+          "firstName": "Ana",
+          "lastName": "Costa",
+          "playerId": "S76561198000000001"
+        },
+        "timing": {
+          "bestLap": 138234,
+          "lapCount": 15,
+          "totalTime": 2234567
+        },
+        "missingMandatoryPitstop": 0
+      },
+      {
+        "car": {
+          "carModel": 25
+        },
+        "currentDriver": {
+          "firstName": "Bruno",
+          "lastName": "Silva",
+          "playerId": "S76561198000000002"
+        },
+        "timing": {
+          "bestLap": 138789,
+          "lapCount": 15,
+          "totalTime": 2239999
+        },
+        "missingMandatoryPitstop": 0
+      }
+    ]
+  }
+}

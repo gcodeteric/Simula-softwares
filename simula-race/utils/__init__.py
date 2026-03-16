@@ -1,0 +1,1 @@
+"""Utilitários partilhados do bot."""
