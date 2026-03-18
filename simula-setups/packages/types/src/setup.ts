@@ -1,4 +1,4 @@
-import type { Sim, Visibility, VersionSource, NoteType, LibrarySource } from "./enums.js";
+import type { Sim, Visibility, VersionSource, NoteType, LibrarySource } from "./enums";
 
 // ---- Car ----
 export interface Car {

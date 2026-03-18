@@ -1,5 +1,5 @@
-import type { SetupParser } from "./types.js";
-import { IracingStoParser } from "./iracing/sto-parser.js";
+import type { SetupParser } from "./types";
+import { IracingStoParser } from "./iracing/sto-parser";
 
 /**
  * Parser registry — resolves the right parser for a given filename.
