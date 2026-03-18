@@ -1,8 +1,8 @@
 import {
   pgTable, uuid, integer, varchar, text, jsonb, timestamp, pgEnum, index,
 } from "drizzle-orm/pg-core";
-import { setups } from "./setups.js";
-import { users } from "./users.js";
+import { setups } from "./setups";
+import { users } from "./users";
 
 export const versionSourceEnum = pgEnum("version_source", [
   "manual", "import", "marketplace_purchase", "ai_generated",

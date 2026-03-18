@@ -1,8 +1,8 @@
 import {
   pgTable, uuid, varchar, boolean, timestamp, pgEnum, index, uniqueIndex,
 } from "drizzle-orm/pg-core";
-import { users } from "./users.js";
-import { setups } from "./setups.js";
+import { users } from "./users";
+import { setups } from "./setups";
 
 export const librarySourceEnum = pgEnum("library_source", [
   "created", "purchased", "shared", "imported",

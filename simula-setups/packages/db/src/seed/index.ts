@@ -1,9 +1,21 @@
-import "dotenv/config";
+import { config } from "dotenv";
+import { resolve } from "path";
+import { existsSync } from "fs";
+
+// Load .env from monorepo root
+const envPaths = [
+  resolve(process.cwd(), ".env"),
+  resolve(process.cwd(), "../../.env"),
+  resolve(__dirname, "../../../../.env"),
+];
+const envPath = envPaths.find((p) => existsSync(p));
+if (envPath) config({ path: envPath });
+
 import { drizzle } from "drizzle-orm/node-postgres";
 import pg from "pg";
-import { cars, tracks, users } from "../schema/index.js";
-import { iRacingCars } from "./cars-data.js";
-import { iRacingTracks } from "./tracks-data.js";
+import { cars, tracks, users } from "../schema/index";
+import { iRacingCars } from "./cars-data";
+import { iRacingTracks } from "./tracks-data";
 
 const { Pool } = pg;
 

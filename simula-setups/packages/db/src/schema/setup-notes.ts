@@ -1,8 +1,8 @@
 import {
   pgTable, uuid, text, jsonb, timestamp, pgEnum, index,
 } from "drizzle-orm/pg-core";
-import { setupVersions } from "./setup-versions.js";
-import { users } from "./users.js";
+import { setupVersions } from "./setup-versions";
+import { users } from "./users";
 
 export const noteTypeEnum = pgEnum("note_type", [
   "manual", "ai_suggestion", "telemetry_linked",

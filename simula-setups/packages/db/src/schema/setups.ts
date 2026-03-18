@@ -1,9 +1,9 @@
 import {
   pgTable, uuid, varchar, text, boolean, timestamp, pgEnum, index,
 } from "drizzle-orm/pg-core";
-import { users } from "./users.js";
-import { cars, simEnum } from "./cars.js";
-import { tracks } from "./tracks.js";
+import { users } from "./users";
+import { cars, simEnum } from "./cars";
+import { tracks } from "./tracks";
 
 export const visibilityEnum = pgEnum("visibility", ["private", "public", "marketplace"]);
 

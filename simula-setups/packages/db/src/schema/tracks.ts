@@ -1,5 +1,5 @@
 import { pgTable, uuid, varchar, jsonb, timestamp, pgEnum, index } from "drizzle-orm/pg-core";
-import { simEnum } from "./cars.js";
+import { simEnum } from "./cars";
 
 export const trackTypeEnum = pgEnum("track_type", [
   "high_downforce", "low_downforce", "technical", "mixed", "oval", "street",

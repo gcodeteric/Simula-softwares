@@ -1,4 +1,16 @@
+import { config } from "dotenv";
+import { resolve } from "path";
+import { existsSync } from "fs";
 import { z } from "zod";
+
+// Load .env from monorepo root before parsing env vars
+// tsx runs with CWD = apps/api (set by Turbo)
+const envPaths = [
+  resolve(process.cwd(), ".env"),
+  resolve(process.cwd(), "../../.env"),
+];
+const dotenvPath = envPaths.find((p) => existsSync(p));
+if (dotenvPath) config({ path: dotenvPath });
 
 const envSchema = z.object({
   NODE_ENV: z.enum(["development", "production", "test"]).default("development"),
